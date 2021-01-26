@@ -1,25 +1,24 @@
 #!/usr/bin/env python 3
 
 # Created by: Dahrio Francois
-# Created on: November 2020
+# Created on: January 2021
 # this programs calculates the surface area of a cube
 #     with user input
 
 
-def area_surf_cube(side):
-    return 6 * side * side
+def main():
+    # this function calculates a cube's surface area
 
-# input
+    # input
+    length = int(input("Enter the length of the cube: "))
+
+    # process
+    surface_area = 6*(length**2)
+
+    # output
+    print("")
+    print("The surface area of this cube is {}m^2".format(surface_area))
 
 
-side = int(input("Enter the side of the cube : "))
-
-# process
-result = area_surf_cube(side)
-
-
-# output
-print("the surface area of the cube is : " + str(result))
-
-if __name__ == "__area_surf_cube__":
-    area_surf_cube(side)
+if __name__ == "__main__":
+    main()
